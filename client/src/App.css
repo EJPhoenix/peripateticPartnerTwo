@@ -1,0 +1,322 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: white;
+  font-size: large;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  a {
+    font-size: small;
+  }
+}
+
+span {
+  margin-bottom: 10px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content:space-around;
+  font-family: fantasy;
+  font-size: x-large;
+  background-color: rgb(73, 76, 98);
+  align-items: top;
+  color: white;
+  padding-bottom: 5px;
+  /* margin-bottom: 5px; */
+}
+@media screen and (max-width:800px) {
+  .Navbar {
+    font-size: small;
+  }
+}
+
+#logo {
+  width: 125px;
+}
+@media screen and (max-width:800px) {
+  #logo {
+    width:75px;
+  }
+}
+
+.Navbar h1 {
+  display: flex;
+  align-items: center;
+}
+
+.homePageTop {
+  /* background-color: rgb(66, 66, 117); */
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  animation: change 90000ms infinite ease-in-out;
+  /* background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/1.jpg); */
+}
+
+input {
+  font-size: larger;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(66, 66, 117, 0.25);
+}
+input:hover {
+  border: lightgray solid 2px
+}
+
+form {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  border: rgb(83, 86, 110) solid 2px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: fit-content;
+  height: auto;
+  background-color: rgb(73, 76, 98, 0.85);
+  font-size: larger;
+  color:white
+}
+@media screen and (max-width:800px) {
+  form, form h1 {
+    font-size: small;
+  }
+}
+
+form h1 {
+  margin-bottom: 50px;
+}
+
+.homePageBottom {
+  /* flex-wrap: wrap; */
+  display: flex;
+  background-color: rgb(151, 145, 158);
+  padding: 20px;
+}
+
+.itineraryBox {
+  display: grid;
+  border: rgb(83, 86, 110) solid 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  color: azure;
+  background-color: rgb(124, 128, 164)
+}
+.itineraryBox:hover {
+  background-color: cornflowerblue;
+}
+
+#itineraryLink {
+  /* border: gold dotted 2px; */
+  padding-bottom: 5px;
+}
+#itineraryLink:hover {
+  font-size: larger;
+}
+#itineraryLink:focus {
+  border: none;
+  color: black;
+}
+
+.detailContainer {
+  padding-bottom: 20px;
+  /* padding-right: 20px; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  animation: change 90000ms infinite ease-in-out;
+}
+
+.updateContainer {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  animation: change 90000ms infinite ease-in-out;
+}
+
+#expDesc {
+  /* display: flex;
+  justify-content: center; */
+  border: gold dotted 2px;
+  width: 30vw ;
+  height: auto;
+  overflow-wrap: break-word;
+  padding: 15px;
+}
+
+button {
+  color: white;
+  background-color: blue;
+  width: auto;
+  height: auto;
+  border: goldenrod solid 3px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: rgb(116, 116, 178);
+}
+button:focus {
+  color: white;
+  background-color: rgb(4, 4, 80);
+  border: goldenrod solid 4px;
+}
+
+#deleteButton {
+  color: white;
+  background-color: red;
+  width: auto;
+  height: auto;
+  border: goldenrod solid 3px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
+}
+
+#deleteButton:hover {
+  background-color: rgb(239, 149, 149);
+}
+#deleteButton:focus {
+  color: white;
+  background-color: rgb(116, 1, 1);
+  border: goldenrod solid 4px;
+}
+
+textarea {
+  height: 125px;
+  width: 250px;
+  font-size: larger;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(66, 66, 117, 0.25);
+}
+textarea:hover {
+  border: lightgray solid 2px
+}
+
+@keyframes change {
+  0%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/1.jpg);
+  }
+  5%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/2.jpg)
+  }
+  10%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/3.jpg);
+  }
+  15%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/4.jpg);
+  }
+  20%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/5.jpg);
+  }
+  25%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/6.jpg);
+  }
+  30%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/7.jpg);
+  }
+  35%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/8.jpg);
+  }
+  40%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/9.jpg);
+  }
+  45%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/10.jpg);
+  }
+  50%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/11.jpg);
+  }
+  55%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/12.jpg);
+  }
+  60%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/13.jpg);
+  }
+  65%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/14.jpg);
+  }
+  70%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/15.jpg);
+  }
+  75%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/16.jpg);
+  }
+  80%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/17.jpg);
+  }
+  85%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/17.jpg);
+  }
+  90%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/18.jpg);
+  }
+  95%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/19.jpg);
+  }
+  100%
+  {
+    background-image: url(/Users/ethanphoenix/Desktop/Projects & Algorithms/peripateticPartner/client/src/assets/20.jpg);
+  }
+}
